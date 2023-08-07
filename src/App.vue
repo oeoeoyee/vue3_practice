@@ -1,19 +1,26 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Nav from './components/Nav.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <Nav />
+    <!-- <router-link to="/">開始</router-link>
+    <router-link to="/page1">今天要幹嘛</router-link>
+    <router-link to="/page2">記帳小幫手</router-link> -->
+
+    <router-view></router-view>
+    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-    </div>
+    </div> -->
   </header>
 
   <main>
-    <TheWelcome />
+    <!-- <TheWelcome /> -->
   </main>
 </template>
 
